@@ -81,7 +81,9 @@ public:
         return this->name_;
     }
 
-
+    size_t Size() {
+        return buffer_.size();
+    }
 
 private:
     friend class InsertCommand;

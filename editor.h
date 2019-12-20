@@ -53,6 +53,10 @@ public:
             std::cout << "No document!\n";
             return;
         }
+        if (index >= doc_->Size()) {
+            std::cout << "Out of bounds\n";
+            return;
+        }
         std::shared_ptr<figure> tmp = doc_->GetFigure(index);
         std::shared_ptr<Acommand> command = std::shared_ptr<Acommand>(new DeleteCommand(tmp,index));
         doc_->Erase(index);
