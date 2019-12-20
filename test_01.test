@@ -1,0 +1,6 @@
+add pentagon 1 1 1 1 1 1 1 1 1 1
+remove 0
+undo
+save
+print
+exit

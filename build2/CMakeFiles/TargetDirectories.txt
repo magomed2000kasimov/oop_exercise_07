@@ -1,0 +1,3 @@
+/home/magomed/oop_exercise_07/build2/CMakeFiles/rebuild_cache.dir
+/home/magomed/oop_exercise_07/build2/CMakeFiles/oop_exercise_07.dir
+/home/magomed/oop_exercise_07/build2/CMakeFiles/edit_cache.dir

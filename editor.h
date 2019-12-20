@@ -62,7 +62,7 @@ public:
 
     void SaveDocument() {
         if (doc_ == nullptr) {
-            std::cout << "Create document!\nNot ";
+            std::cout << "No document!\nNot ";
             return;
         }
         std::string saveName = doc_->GetName();

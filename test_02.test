@@ -1,0 +1,21 @@
+create buffer1.txt
+add pentagon 5 5 5 5 5 5 5 5 5 5
+add hexagon 6 6 6 6 6 6 6 6 6 6 6 6
+add gldlfglg
+add octagon 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+print
+save
+remove 1
+remove 0
+undo 
+undo
+add pentagon 0 0 0 0 0 0 0 0 0 0
+undo
+undo
+print
+undo
+print
+undo
+print
+undo
+exit

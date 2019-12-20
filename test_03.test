@@ -1,0 +1,13 @@
+create tmp.txt
+add hexagon 1 1 1 1 1 1 1 1 1 1 1 1 
+print
+load buffer1.txt
+print
+undo
+add pentagon 7 7 7 7 7 7 7 7 7 7
+print
+undo
+print
+undo
+exit
+

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/oop_exercise_07.dir/main.cpp.o CMakeFiles/oop_exercise_07.dir/hexagon.cpp.o CMakeFiles/oop_exercise_07.dir/point.cpp.o CMakeFiles/oop_exercise_07.dir/pentagon.cpp.o CMakeFiles/oop_exercise_07.dir/octagon.cpp.o  -o oop_exercise_07 
