@@ -42,9 +42,8 @@ public:
             std::cout << "No document!\n";
             return;
         }
-        std::shared_ptr<Acommand> command = std::shared_ptr<Acommand>(new InsertCommand());
+        std::shared_ptr<Acommand> command = std::shared_ptr<Acommand>(new InsertCommand(doc_));
         doc_->Insert(newFigure);
-        command -> SetDocument(doc_);
         history_.push(command);
     }
 
@@ -58,9 +57,8 @@ public:
             return;
         }
         std::shared_ptr<figure> tmp = doc_->GetFigure(index);
-        std::shared_ptr<Acommand> command = std::shared_ptr<Acommand>(new DeleteCommand(tmp,index));
+        std::shared_ptr<Acommand> command = std::shared_ptr<Acommand>(new DeleteCommand(tmp,index,doc_));
         doc_->Erase(index);
-        command -> SetDocument(doc_);
         history_.push(command);
     }
 

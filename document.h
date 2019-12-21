@@ -16,74 +16,25 @@
 
 struct document {
 public:
-    void Print() const {
-        if (buffer_.empty()) {
-            std::cout << "Buffer is empty\n";
-        }
-        for (auto elem : buffer_) {
-            elem->print(std::cout);
-        }
-    };
+    void Print() const ;
 
     document(std::string& newName): name_(newName), factory_(), buffer_(0) {};
 
-    void Insert(std::shared_ptr<figure>& ptr) {
-        buffer_.push_back(ptr);
-    };
+    void Insert(std::shared_ptr<figure>& ptr);
 
-    void Rename(const std::string& newName) {
-        name_ = newName;
-    };
+    void Rename(const std::string& newName);
 
-    void Save (const std::string& filename) const {
-        std::ofstream fout;
-        fout.open(filename);
-        if (!fout.is_open()) {
-            throw std::runtime_error("File is not opened\n");
-        }
-        fout << buffer_.size() << '\n';
-        for (auto elem : buffer_) {
-            elem->printFile(fout);
-        }
-    }
+    void Save (const std::string& filename) const;
 
-    void Load(const std::string& filename) {
-        std::ifstream fin;
-        fin.open(filename);
-        if (!fin.is_open()) {
-            throw std::runtime_error("File is not opened\n");
-        }
-        size_t size;
-        fin >> size;
-        buffer_.clear();
-        for (int i = 0; i < size; ++i) {
-            buffer_.push_back(factory_.FigureCreateFile(fin));
-        }
-        name_ = filename;
-    }
+    void Load(const std::string& filename);
 
-    std::shared_ptr<figure> GetFigure(uint32_t index) {
-        return buffer_[index];
-    }
+    std::shared_ptr<figure> GetFigure(uint32_t index);
 
-    void Erase(uint32_t index) {
-        if ( index >= buffer_.size()) {
-            throw std::logic_error("Out of bounds\n");
-        }
-        buffer_[index] = nullptr;
-        for (; index < buffer_.size() - 1; ++index) {
-            buffer_[index] = buffer_[index + 1];
-        }
-        buffer_.pop_back();
-    }
+    void Erase(uint32_t index);
 
-    std::string GetName() {
-        return this->name_;
-    }
+    std::string GetName();
 
-    size_t Size() {
-        return buffer_.size();
-    }
+    size_t Size();
 
 private:
     friend class InsertCommand;
@@ -92,22 +43,9 @@ private:
     std::string name_;
     std::vector<std::shared_ptr<figure>> buffer_;
 
-    void RemoveLast() {
-        if (buffer_.empty()) {
-            throw std::logic_error("Document is empty");
-        }
-        buffer_.pop_back();
-    }
+    void RemoveLast();
 
-    void InsertIndex(std::shared_ptr<figure>& newFigure, uint32_t index) {
-        /*buffer_.push_back(newFigure);
-        for (int i = buffer_.size() - 1; i != index ; --i){
-            std::shared_ptr<figure> tmp = buffer_[i];
-            buffer_[i] = buffer_[i - 1];
-            buffer_ [i - 1] = tmp;
-        }*/
-        buffer_.insert(buffer_.begin() + index, newFigure);
-    }
+    void InsertIndex(std::shared_ptr<figure>& newFigure, uint32_t index);
 };
 
 

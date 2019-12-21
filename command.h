@@ -9,9 +9,9 @@
 struct Acommand {
     virtual ~Acommand() = default;
     virtual void UnExecute() = 0;
-    void SetDocument(std::shared_ptr<document>& doc) {
+   /* void SetDocument(std::shared_ptr<document>& doc) {
         doc_ = doc;
-    }
+    }*/
 
 protected:
     std::shared_ptr<document> doc_;
@@ -22,11 +22,18 @@ public:
     void UnExecute() override {
         doc_->RemoveLast();
     }
+
+    InsertCommand(std::shared_ptr<document>& doc) {
+        doc_ = doc;
+    }
+
+
 };
 
 struct DeleteCommand : public Acommand {
 public:
-    DeleteCommand(std::shared_ptr<figure>& newFigure, uint32_t newIndex) {
+    DeleteCommand(std::shared_ptr<figure>& newFigure, uint32_t newIndex,std::shared_ptr<document>& doc) {
+        doc_ = doc;
         figure_ = newFigure;
         index_ = newIndex;
     }
