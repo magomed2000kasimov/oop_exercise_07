@@ -9,9 +9,7 @@
 struct Acommand {
     virtual ~Acommand() = default;
     virtual void UnExecute() = 0;
-   /* void SetDocument(std::shared_ptr<document>& doc) {
-        doc_ = doc;
-    }*/
+
 
 protected:
     std::shared_ptr<document> doc_;
