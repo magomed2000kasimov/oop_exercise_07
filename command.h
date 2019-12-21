@@ -27,9 +27,7 @@ public:
 struct DeleteCommand : public Acommand {
 public:
     DeleteCommand(std::shared_ptr<figure>& newFigure, uint32_t newIndex,std::shared_ptr<document>& doc);
-    void UnExecute() override {
-        doc_->InsertIndex(figure_,index_);
-    }
+    void UnExecute() override;
 
 private:
     std::shared_ptr<figure> figure_;

@@ -14,4 +14,6 @@ DeleteCommand::DeleteCommand(std::shared_ptr<figure> &newFigure, uint32_t newInd
     index_ = newIndex;
 }
 
-
+void DeleteCommand::UnExecute() {
+    doc_->InsertIndex(figure_,index_);
+}
