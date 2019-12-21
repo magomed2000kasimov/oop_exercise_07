@@ -72,11 +72,15 @@ public:
     }
 
     void LoadDocument(std::string& name) {
-        doc_ = std::make_shared<document>(name);
+       try {
+	 doc_ = std::make_shared<document>(name);
         doc_->Load(name);
         while (!history_.empty()){
             history_.pop();
         }
+	} catch(std::logic_error& e) {
+		std::cout << e.what();
+	}
     }
 
     void Undo(){
