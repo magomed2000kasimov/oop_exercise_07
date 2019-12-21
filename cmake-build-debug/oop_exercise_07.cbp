@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="oop_exercise_07"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/oop_exercise_07/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/oop_exercise_07/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="oop_exercise_07">
+				<Option output="C:/oop_exercise_07/cmake-build-debug/oop_exercise_07.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/oop_exercise_07/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 oop_exercise_07"/>
+					<CompileFile command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="oop_exercise_07/fast">
+				<Option output="C:/oop_exercise_07/cmake-build-debug/oop_exercise_07.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/oop_exercise_07/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="M:/CLion 2019.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 oop_exercise_07/fast"/>
+					<CompileFile command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/oop_exercise_07/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="M:/CLion 2019.1/mingw64/bin/mingw32-make.exe -f &quot;C:/oop_exercise_07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/oop_exercise_07/command.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/command.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/document.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/document.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/editor.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/editor.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/factory.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/factory.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/figure.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/hexagon.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/hexagon.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/main.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/octagon.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/octagon.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/pentagon.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/pentagon.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/point.cpp">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/point.h">
+			<Option target="oop_exercise_07"/>
+		</Unit>
+		<Unit filename="C:/oop_exercise_07/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

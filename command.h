@@ -17,24 +17,16 @@ protected:
 
 struct InsertCommand : public Acommand {
 public:
-    void UnExecute() override {
-        doc_->RemoveLast();
-    }
+    void UnExecute() override;
 
-    InsertCommand(std::shared_ptr<document>& doc) {
-        doc_ = doc;
-    }
+    InsertCommand(std::shared_ptr<document>& doc);
 
 
 };
 
 struct DeleteCommand : public Acommand {
 public:
-    DeleteCommand(std::shared_ptr<figure>& newFigure, uint32_t newIndex,std::shared_ptr<document>& doc) {
-        doc_ = doc;
-        figure_ = newFigure;
-        index_ = newIndex;
-    }
+    DeleteCommand(std::shared_ptr<figure>& newFigure, uint32_t newIndex,std::shared_ptr<document>& doc);
     void UnExecute() override {
         doc_->InsertIndex(figure_,index_);
     }
